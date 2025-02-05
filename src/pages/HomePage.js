@@ -94,9 +94,9 @@ const HomePage = () => {
       <button className="btn" style={{ backgroundColor: "gray" }}>
         Plateform = {navigator.platform}{" "}
       </button>
-      <button onClick={() => navigate("/scanner")} className="btn">
+      {/* <button onClick={() => navigate("/scanner")} className="btn">
         Scan QR
-      </button>
+      </button> */}
     </div>
   );
 };

@@ -14,8 +14,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/scanner" element={<QRScanner />}></Route>
-        <Route path="/stream" element={<Stream />}></Route>
+        {/* <Route path="/scanner" element={<QRScanner />}></Route>
+        <Route path="/stream" element={<Stream />}></Route> */}
       </Routes>
     </BrowserRouter>
   );
