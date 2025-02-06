@@ -99,15 +99,23 @@ const HomePage = () => {
     //   </button>
     // </div>
     <div className="" style={{ background: "white" }}>
-      <div>
-        <marquee scrollamount="30">
-          <h1 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
-            IR Unreserved Ticketing
-          </h1>
-        </marquee>
+      <div className="marquee-container">
+        <div className="box">
+          <marquee scrollamount="30">
+            <h1 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
+              IR Unreserved Ticketing
+            </h1>
+          </marquee>
+        </div>
+        <div className="box d-flex">
+          <div className="container d-flex align-items-center justify-content-between">
+            <img src="cris.png" className="circle-icons ms-2" width={"20vw"} />
+            <img src="indian-railway.png" className="irl-icon" width={"20vw"} />
+          </div>
+        </div>
       </div>
 
-      <div className="container fw-bolder">
+      <div className="container fw-bolder" style={{ fontSize: "0.8rem" }}>
         <div className="shadow bg-body rounded-2">
           <div
             className="p-3"
@@ -135,14 +143,17 @@ const HomePage = () => {
 
             <div className="border-bottom py-1"></div>
 
-            <div className="d-flex align-items-center">
+            <div
+              className="d-flex align-items-center"
+              style={{ fontSize: "0.8rem" }}
+            >
               {/* "border-radius:50%; border:solid black 1px;padding:5px" */}
               <div
                 style={{
                   borderRadius: "50%",
                   background: "#961295",
                   color: "white",
-                  width: "1.5vw",
+                  width: "6.5vw",
                   textAlign: "center",
                 }}
               >
@@ -154,13 +165,16 @@ const HomePage = () => {
                 <div>अंबरनाथ</div>
               </div>
             </div>
-            <div className="d-flex align-items-center pt-3">
+            <div
+              className="d-flex align-items-center pt-3"
+              style={{ fontSize: "0.8rem" }}
+            >
               <div
                 style={{
                   borderRadius: "50%",
                   background: "#961295",
                   color: "white",
-                  width: "1.5vw",
+                  width: "6.5vw",
                   textAlign: "center",
                 }}
               >
@@ -172,11 +186,17 @@ const HomePage = () => {
                 <div>कल्यान ज.</div>
               </div>
             </div>
-            <div className="d-flex align-items-center pt-3">
+            <div
+              className="d-flex align-items-center pt-3"
+              style={{ fontSize: "0.8rem" }}
+            >
               <div>Adult: 1</div>
               <div className="ms-4">Child: 0</div>
             </div>
-            <div className="d-flex justify-content-between align-items-center pt-3">
+            <div
+              className="d-flex justify-content-between align-items-center pt-3"
+              style={{ fontSize: "0.8rem" }}
+            >
               <div className="d-flex align-items-center">
                 <div className="fw-light">CLASS:</div>
                 <div className="ms-2">
@@ -201,7 +221,7 @@ const HomePage = () => {
                   borderRadius: "50%",
                   background: "#961295",
                   color: "white",
-                  width: "1.5vw",
+                  width: "7.5vw",
                   textAlign: "center",
                 }}
                 className=""
@@ -213,7 +233,10 @@ const HomePage = () => {
 
             <div className="border-bottom py-1"></div>
 
-            <div className="d-flex align-items-center py-1">
+            <div
+              className="d-flex align-items-center py-1"
+              style={{ fontSize: "0.8rem" }}
+            >
               <div className="d-flex align-items-center">
                 <div className="fw-light">TRAIN TYPE:</div>
                 <div>996411</div>
@@ -223,37 +246,52 @@ const HomePage = () => {
                 <div>27AAAGMO289C2ZI</div>
               </div>
             </div>
-            <div className="d-flex align-items-center py-1">
+            <div
+              className="d-flex align-items-center py-1"
+              style={{ fontSize: "0.8rem" }}
+            >
               <div className="d-flex align-items-center">
                 <div className="fw-light">
                   Journey Should Commence within 1 hour
                 </div>
               </div>
             </div>
-            <div className="d-flex justify-content-between align-items-center py-1">
+            <div
+              className="d-flex justify-content-between align-items-center py-1"
+              style={{ fontSize: "0.8rem" }}
+            >
               <div>R17159</div>
               <div className="fw-light">Distance: 7 km</div>
             </div>
-            <div className="d-flex align-items-center py-1">
+            <div
+              className="d-flex align-items-center py-1"
+              style={{ fontSize: "0.8rem" }}
+            >
               <div>Booking Time:</div>
               <div className="fw-light">06/02/2025 19:17</div>
             </div>
           </div>
-          <div className="px-5 pb-4 pt-2">
-            <div className="fw-light text-primary">
+          <div className="px-2 pb-4 pt-2">
+            <div
+              className="fw-light text-primary"
+              style={{ fontSize: "0.7rem" }}
+            >
               It is recommended not to perform factory reset or change you
               handset whenever you are having valid ticket in the mobile.
             </div>
             <div
-              className="fw-light text-decoration-underline"
-              style={{ color: "rgb(254, 108, 75)" }}
+              className="fw-light text-decoration-underline py-2"
+              style={{ color: "rgb(254, 108, 75)", fontSize: "0.8rem" }}
             >
               Click for Changing Handset with Valid Ticket
             </div>
-            <div style={{ color: "rgb(254, 59, 59)" }}>
+            <div style={{ color: "rgb(254, 59, 59)", fontSize: "0.7rem" }}>
               FOR MEDICAL EMERGENCY I FIRST AID. CONTACT TICKET
             </div>
-            <div className="text-center" style={{ color: "rgb(254, 59, 59)" }}>
+            <div
+              className="text-center"
+              style={{ color: "rgb(254, 59, 59)", fontSize: "0.7rem" }}
+            >
               CHECKING STAFFIGUARD OR DIAL 139
             </div>
             <button
@@ -262,7 +300,7 @@ const HomePage = () => {
                 background: "#FE6D49",
                 border: "0px",
                 color: "white",
-                fontSize: "1.2rem",
+                fontSize: "0.8rem",
               }}
               class="w-100 py-2 my-2"
             >
@@ -274,7 +312,7 @@ const HomePage = () => {
                 background: "#FE6D49",
                 border: "0px",
                 color: "white",
-                fontSize: "1.2rem",
+                fontSize: "0.8rem",
               }}
               class="w-100 py-2 my-2"
             >
@@ -286,7 +324,7 @@ const HomePage = () => {
                 background: "#FE6D49",
                 border: "0px",
                 color: "white",
-                fontSize: "1.2rem",
+                fontSize: "0.8rem",
               }}
               class="w-100 py-2 my-2"
             >
