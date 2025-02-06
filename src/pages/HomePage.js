@@ -99,11 +99,13 @@ const HomePage = () => {
     //   </button>
     // </div>
     <div className="" style={{ background: "white" }}>
-      <marquee scrollamount="30">
-        <h1 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
-          IR Unreserved Ticketing
-        </h1>
-      </marquee>
+      <div>
+        <marquee scrollamount="30">
+          <h1 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
+            IR Unreserved Ticketing
+          </h1>
+        </marquee>
+      </div>
 
       <div className="container fw-bolder">
         <div className="shadow bg-body rounded-2">
