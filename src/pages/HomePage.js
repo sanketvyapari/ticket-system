@@ -182,7 +182,7 @@ const HomePage = () => {
               </div>{" "}
               <div className="ps-2">
                 <div>अंबरनाथ</div>
-                <div className="text-uppercase">Ambernath</div>
+                <div className="text-uppercase">Ambarnath</div>
                 <div>अंबरनाथ</div>
               </div>
             </div>
@@ -325,7 +325,7 @@ const HomePage = () => {
               }}
               class="w-100 py-2 my-2"
             >
-              NEXT TRAINS TO KALYAN JN.
+              NEXT TRAINS TO AMBARNATH
             </button>
             <button
               style={{
