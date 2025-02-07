@@ -101,7 +101,7 @@ const HomePage = () => {
     <div className="" style={{ background: "white" }}>
       <div className="marquee-container">
         <div className="box">
-          <marquee scrollamount="30">
+          <marquee scrollamount="15">
             <h1 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
               IR Unreserved Ticketing
             </h1>
