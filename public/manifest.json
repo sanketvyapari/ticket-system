@@ -1,5 +1,5 @@
 {
-  "short_name": "Dummy ",
+  "short_name": "Ticket",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -19,8 +19,8 @@
     }
   ],
   "start_url": "/",
-  "theme_color": "#F4BD42",
-  "background_color": "#2B2929",
+  "theme_color": "#ff863b",
+  "background_color": "#ff863b",
   "display": "standalone",
   "scope": "/"
 }
