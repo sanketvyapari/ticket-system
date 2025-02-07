@@ -118,9 +118,9 @@ const HomePage = () => {
       <div className="container fw-bolder" style={{ fontSize: "0.8rem" }}>
         <div className="shadow bg-body rounded-2">
           <div
-            className="p-3"
+            className="px-3 pt-3"
             style={{
-              background: "#B8C3B0",
+              background: "#00c3ff",
               borderTopLeftRadius: "0.5rem",
               borderTopRightRadius: "0.5rem",
             }}
@@ -130,11 +130,11 @@ const HomePage = () => {
 
             <div className="d-flex justify-content-between py-1">
               <div>&nbsp;</div>
-              <div className="text-uppercase">JOURNEY</div>
-              <div>06/02/2025</div>
+              <div className="text-uppercase">JOURNEY (J)</div>
+              <div>07/02/2025</div>
             </div>
             <div className="d-flex justify-content-between py-1">
-              <div>$5.00/-</div>
+              <div>₹300.00/-</div>
               <div>9167390024</div>
             </div>
             <div className="d-flex justify-content-between py-1">
@@ -160,13 +160,13 @@ const HomePage = () => {
                 S
               </div>
               <div className="ps-2 pt-2">
-                <div>अंबरनाथ</div>
-                <div className="text-uppercase">Ambernath</div>
-                <div>अंबरनाथ</div>
+                <div>घाटकोपर</div>
+                <div className="text-uppercase">GHATKOPAR</div>
+                <div>घाटकोपर</div>
               </div>
             </div>
             <div
-              className="d-flex align-items-center pt-3"
+              className="d-flex align-items-center pt-2"
               style={{ fontSize: "0.8rem" }}
             >
               <div
@@ -181,36 +181,36 @@ const HomePage = () => {
                 D
               </div>{" "}
               <div className="ps-2">
-                <div>कल्याण जं.</div>
-                <div className="text-uppercase">KALAN JN.</div>
-                <div>कल्यान ज.</div>
+                <div>अंबरनाथ</div>
+                <div className="text-uppercase">Ambernath</div>
+                <div>अंबरनाथ</div>
               </div>
             </div>
             <div
-              className="d-flex align-items-center pt-3"
+              className="d-flex align-items-center pt-1"
               style={{ fontSize: "0.8rem" }}
             >
-              <div>Adult: 1</div>
+              <div>Adult: 3</div>
               <div className="ms-4">Child: 0</div>
             </div>
             <div
-              className="d-flex justify-content-between align-items-center pt-3"
+              className="d-flex justify-content-between align-items-center pt-1"
               style={{ fontSize: "0.8rem" }}
             >
               <div className="d-flex align-items-center">
                 <div className="fw-light">CLASS:</div>
                 <div className="ms-2">
-                  <div>द्वितीय</div>
-                  <div>SECOND</div>
-                  <div>द्वि श्रे</div>
+                  <div>प्रथम</div>
+                  <div>FIRST (FC)</div>
+                  <div>प्र श्रे</div>
                 </div>
               </div>
               <div className="d-flex align-items-center">
                 <div className="fw-light">TRAIN TYPE:</div>
                 <div className="ms-2">
-                  <div>साधारण</div>
+                  <div>एसी ईएमयू</div>
                   <div>ORDINARY</div>
-                  <div>साधारण</div>
+                  <div>एसी ईमु</div>
                 </div>
               </div>
             </div>
@@ -238,12 +238,21 @@ const HomePage = () => {
               style={{ fontSize: "0.8rem" }}
             >
               <div className="d-flex align-items-center">
-                <div className="fw-light">TRAIN TYPE:</div>
+                <div className="fw-light">SAC:</div>
                 <div>996411</div>
               </div>
               <div className="d-flex align-items-center ms-4">
                 <div className="fw-light">IR:</div>
                 <div>27AAAGMO289C2ZI</div>
+              </div>
+            </div>
+            <div
+              className="d-flex align-items-center py-1"
+              style={{ fontSize: "0.8rem" }}
+            >
+              <div className="d-flex align-items-center">
+                <div className="fw-light">Total GST:</div>
+                <div>15</div>
               </div>
             </div>
             <div
@@ -261,14 +270,14 @@ const HomePage = () => {
               style={{ fontSize: "0.8rem" }}
             >
               <div>R17159</div>
-              <div className="fw-light">Distance: 7 km</div>
+              <div className="fw-light">Distance: 41 km</div>
             </div>
             <div
               className="d-flex align-items-center py-1"
               style={{ fontSize: "0.8rem" }}
             >
               <div>Booking Time:</div>
-              <div className="fw-light">06/02/2025 19:17</div>
+              <div className="fw-light">07/02/2025 16:30</div>
             </div>
           </div>
           <div className="px-2 pb-4 pt-2">
