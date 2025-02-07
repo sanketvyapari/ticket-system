@@ -209,7 +209,7 @@ const HomePage = () => {
                 <div className="fw-light">TRAIN TYPE:</div>
                 <div className="ms-2">
                   <div>एसी ईएमयू</div>
-                  <div>ORDINARY</div>
+                  <div>AC EMU TRAIN (U)</div>
                   <div>एसी ईमु</div>
                 </div>
               </div>
@@ -277,7 +277,7 @@ const HomePage = () => {
               style={{ fontSize: "0.8rem" }}
             >
               <div>Booking Time:</div>
-              <div className="fw-light">07/02/2025 16:30</div>
+              <div className="fw-light">07/02/2025 16:44</div>
             </div>
           </div>
           <div className="px-2 pb-4 pt-2">
