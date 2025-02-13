@@ -1,6 +1,6 @@
 {
   "short_name": "Ticket",
-  "name": "Create React App Sample",
+  "name": "Ticketing System",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,8 +19,8 @@
     }
   ],
   "start_url": "/",
-  "theme_color": "#ff863b",
-  "background_color": "#ff863b",
+  "theme_color": "#FF8033",
+  "background_color": "#FF8033",
   "display": "standalone",
   "scope": "/"
 }

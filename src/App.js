@@ -7,11 +7,15 @@ import HomePage from "./pages/HomePage";
 // import Stream from "./pages/Stream";
 
 import "./App.css";
+import HomePageList from "./pages/HomePageList";
+import Home from "./pages/Home";
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/list" element={<HomePageList />}></Route>
+        <Route path="/detail" element={<HomePage />}></Route>
         {/* <Route path="/scanner" element={<QRScanner />}></Route>
         <Route path="/stream" element={<Stream />}></Route> */}
       </Routes>

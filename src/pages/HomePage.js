@@ -4,6 +4,19 @@ import handleGetLocation from "../service/geoLocation";
 import sendNotification, { showNotification } from "../service/notification";
 import handleVibrate from "../service/vibrate";
 import { useNavigate } from "react-router";
+import { getCurrentDate } from "../utils";
+import { CONFIG } from "./HomePageList";
+
+const STN_DETAIL_CONFG = {
+  AMBARNATH: {
+    mr: "अंबरनाथ",
+    hn: "अंबरनाथ",
+  },
+  GHATKOPAR: {
+    mr: "घाटकोपर",
+    hn: "घाटकोपर",
+  },
+};
 
 const HomePage = () => {
   const [isLoactionLoaded, setisLoactionLoaded] = useState();
@@ -60,52 +73,16 @@ const HomePage = () => {
   };
 
   return (
-    // <div className="App">
-    //   <h2>React - PWA</h2>
-    //   <button className="btn" onClick={handleNotification}>
-    //     Send Custom notification (PWA)
-    //   </button>
-    //   <button
-    //     className="btn"
-    //     onClick={() => handleGetLocation(setisLoactionLoaded)}
-    //   >
-    //     Get Location
-    //   </button>
-    //   {isLoactionLoaded ? (
-    //     <p>
-    //       Your current location is (Latitude: {isLoactionLoaded.coords.latitude}{" "}
-    //       , Longitude: {isLoactionLoaded.coords.longitude} )
-    //     </p>
-    //   ) : null}
-
-    //   <button disabled className="btn" onClick={handleVibrate}>
-    //     Reading Otp ( only in chrome android )
-    //   </button>
-    //   <button className="btn" onClick={handleVibrate}>
-    //     Vibrate (only Mobile)
-    //   </button>
-    //   <button onClick={() => navigate("/stream")} className="btn">
-    //     Stream (Record)
-    //   </button>
-    //   <label htmlFor="input-file">
-    //     <button className="btn">Storage</button>
-    //     <input id="input-file" type="file" />
-    //   </label>
-    //   <button className="btn" style={{ backgroundColor: "gray" }}>
-    //     Plateform = {navigator.platform}{" "}
-    //   </button>
-    //   <button onClick={() => navigate("/scanner")} className="btn">
-    //     Scan QR
-    //   </button>
-    // </div>
     <div className="" style={{ background: "white" }}>
       <div className="marquee-container">
         <div className="box">
-          <marquee scrollamount="15">
-            <h3 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
-              IR Unreserved Ticketing
-            </h3>
-          </marquee>
+          <div className="d-flex align-items-center mt-2">
+            <marquee scrollamount="10">
+              <h6 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
+                IR Unreserved Ticketing
+              </h6>
+            </marquee>
+          </div>
         </div>
         <div className="box d-flex">
           <div className="container d-flex align-items-center justify-content-between">
@@ -131,14 +108,16 @@ const HomePage = () => {
             <div className="d-flex justify-content-between py-1">
               <div>&nbsp;</div>
               <div className="text-uppercase">JOURNEY (J)</div>
-              <div>07/02/2025</div>
+              <div>{getCurrentDate()}</div>
             </div>
             <div className="d-flex justify-content-between py-1">
-              <div>₹300.00/-</div>
-              <div>9167390024</div>
+              <div>₹{CONFIG?.[localStorage.getItem("type")]?.fare}/-</div>
+              <div>{localStorage.getItem("phone_number")}</div>
             </div>
             <div className="d-flex justify-content-between py-1">
-              <div className="text-uppercase">UTS No: X06YE030DF</div>
+              <div className="text-uppercase">
+                UTS No: {localStorage.getItem("number")}
+              </div>
             </div>
 
             <div className="border-bottom py-1"></div>
@@ -160,9 +139,11 @@ const HomePage = () => {
                 S
               </div>
               <div className="ps-2 pt-2">
-                <div>घाटकोपर</div>
-                <div className="text-uppercase">GHATKOPAR</div>
-                <div>घाटकोपर</div>
+                <div>{STN_DETAIL_CONFG?.[localStorage.getItem("from")].mr}</div>
+                <div className="text-uppercase">
+                  {localStorage.getItem("from")}
+                </div>
+                <div>{STN_DETAIL_CONFG?.[localStorage.getItem("from")].hn}</div>
               </div>
             </div>
             <div
@@ -179,18 +160,25 @@ const HomePage = () => {
                 }}
               >
                 D
-              </div>{" "}
+              </div>
               <div className="ps-2">
+                <div>{STN_DETAIL_CONFG?.[localStorage.getItem("to")].mr}</div>
+                <div className="text-uppercase">
+                  {localStorage.getItem("to")}
+                </div>
+                <div>{STN_DETAIL_CONFG?.[localStorage.getItem("to")].hn}</div>
+              </div>
+              {/* <div className="ps-2">
                 <div>अंबरनाथ</div>
                 <div className="text-uppercase">Ambarnath</div>
                 <div>अंबरनाथ</div>
-              </div>
+              </div> */}
             </div>
             <div
               className="d-flex align-items-center pt-1"
               style={{ fontSize: "0.8rem" }}
             >
-              <div>Adult: 3</div>
+              <div>Adult: 1</div>
               <div className="ms-4">Child: 0</div>
             </div>
             <div
@@ -200,17 +188,17 @@ const HomePage = () => {
               <div className="d-flex align-items-center">
                 <div className="fw-light">CLASS:</div>
                 <div className="ms-2">
-                  <div>प्रथम</div>
-                  <div>FIRST (FC)</div>
-                  <div>प्र श्रे</div>
+                  <div>{CONFIG?.[localStorage.getItem("type")]?.class_mr}</div>
+                  <div>{CONFIG?.[localStorage.getItem("type")]?.clss_eg}</div>
+                  <div>{CONFIG?.[localStorage.getItem("type")]?.class_hn}</div>
                 </div>
               </div>
               <div className="d-flex align-items-center">
                 <div className="fw-light">TRAIN TYPE:</div>
                 <div className="ms-2">
-                  <div>एसी ईएमयू</div>
-                  <div>AC EMU TRAIN (U)</div>
-                  <div>एसी ईमु</div>
+                  <div>{CONFIG?.[localStorage.getItem("type")]?.type_mr}</div>
+                  <div>{CONFIG?.[localStorage.getItem("type")]?.type_eg}</div>
+                  <div>{CONFIG?.[localStorage.getItem("type")]?.type_hn}</div>
                 </div>
               </div>
             </div>
@@ -228,7 +216,7 @@ const HomePage = () => {
               >
                 via
               </div>
-              <div className="ms-2 fw-light">-------</div>
+              <div className="ms-2 fw-light">KYN</div>
             </div>
 
             <div className="border-bottom py-1"></div>
@@ -252,7 +240,7 @@ const HomePage = () => {
             >
               <div className="d-flex align-items-center">
                 <div className="fw-light">Total GST:</div>
-                <div>15</div>
+                <div>{CONFIG?.[localStorage.getItem("type")]?.fare * 0.05}</div>
               </div>
             </div>
             <div
@@ -277,7 +265,9 @@ const HomePage = () => {
               style={{ fontSize: "0.8rem" }}
             >
               <div>Booking Time:</div>
-              <div className="fw-light">07/02/2025 16:44</div>
+              <div className="fw-light">
+                {getCurrentDate()} {localStorage.getItem("time")}
+              </div>
             </div>
           </div>
           <div className="px-2 pb-4 pt-2">
@@ -325,7 +315,7 @@ const HomePage = () => {
               }}
               class="w-100 py-2 my-2"
             >
-              NEXT TRAINS TO AMBARNATH
+              NEXT TRAINS TO {localStorage.getItem("from")}
             </button>
             <button
               style={{
@@ -336,6 +326,9 @@ const HomePage = () => {
                 fontSize: "0.8rem",
               }}
               class="w-100 py-2 my-2"
+              onClick={() => {
+                navigate("/");
+              }}
             >
               OK
             </button>
