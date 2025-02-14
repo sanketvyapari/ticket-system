@@ -97,7 +97,7 @@ const HomePage = () => {
           <div
             className="px-3 pt-3"
             style={{
-              background: "#00c3ff",
+              background: "#bd928c",
               borderTopLeftRadius: "0.5rem",
               borderTopRightRadius: "0.5rem",
             }}
@@ -339,6 +339,7 @@ const HomePage = () => {
       <div className="text-center">
         Centre for Railway Information Systems (CRIS)
       </div>
+      {/* <img src="WhatsApp Image 2025-02-14 at 3.55.16 PM.jpeg" /> */}
     </div>
   );
 };
