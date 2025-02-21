@@ -315,7 +315,7 @@ const HomePage = () => {
               }}
               class="w-100 py-2 my-2"
             >
-              NEXT TRAINS TO {localStorage.getItem("from")}
+              NEXT TRAINS TO {localStorage.getItem("to")}
             </button>
             <button
               style={{
