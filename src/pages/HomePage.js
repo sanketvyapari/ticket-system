@@ -97,7 +97,7 @@ const HomePage = () => {
           <div
             className="px-3 pt-3"
             style={{
-              background: "#f2bd52",
+              background: "#a68674",
               borderTopLeftRadius: "0.5rem",
               borderTopRightRadius: "0.5rem",
             }}
