@@ -319,7 +319,7 @@ const HomePageList = () => {
                     placeholder="Color Code"
                     aria-label="color code"
                     name="color"
-                    value={"X06VE04005"}
+                    value={localStorage.getItem("color")}
                   />
                 </div>
               </div>
