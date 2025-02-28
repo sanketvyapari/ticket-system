@@ -244,6 +244,9 @@ const HomePageList = () => {
                 if (formProps.number) {
                   localStorage.setItem("number", formProps.number);
                 }
+                if (formProps.color) {
+                  localStorage.setItem("color", formProps.color);
+                }
               }}
             >
               <div class="modal-body">
@@ -306,6 +309,16 @@ const HomePageList = () => {
                     placeholder="Your UT Number"
                     aria-label="default input example"
                     name="number"
+                    value={"X06VE04005"}
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Color Code"
+                    aria-label="color code"
+                    name="color"
                     value={"X06VE04005"}
                   />
                 </div>
