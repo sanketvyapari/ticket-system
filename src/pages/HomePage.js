@@ -76,16 +76,17 @@ const HomePage = () => {
     <div className="" style={{ background: "white" }}>
       <div className="marquee-container">
         <div className="box">
-          <div className="d-flex align-items-center mt-2">
+          <div
+            className="d-flex align-items-center mt-2 fw-bolder"
+            style={{ color: "rgb(61, 87, 253)" }}
+          >
             <marquee
               scrollamount="10"
               loop="infinite"
               behavior="scroll"
               direction="left"
             >
-              <h6 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
-                IR Unreserved Ticketing
-              </h6>
+              IR Unreserved Ticketing
             </marquee>
           </div>
         </div>
