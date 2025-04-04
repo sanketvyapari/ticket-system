@@ -299,7 +299,7 @@ const HomePageList = () => {
                     placeholder="Phone Number"
                     aria-label="default input example"
                     name="phone_number"
-                    value={localStorage.getItem("phone_number")}
+                    defaultValue={localStorage.getItem("phone_number")}
                   />
                 </div>
                 <div class="mb-3">
