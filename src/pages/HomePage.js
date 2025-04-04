@@ -77,7 +77,12 @@ const HomePage = () => {
       <div className="marquee-container">
         <div className="box">
           <div className="d-flex align-items-center mt-2">
-            <marquee scrollamount="10">
+            <marquee
+              scrollamount="10"
+              loop="infinite"
+              behavior="scroll"
+              direction="left"
+            >
               <h6 className="fw-bolder" style={{ color: "rgb(61, 87, 253)" }}>
                 IR Unreserved Ticketing
               </h6>
