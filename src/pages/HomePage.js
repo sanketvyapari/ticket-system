@@ -78,7 +78,7 @@ const HomePage = () => {
         <div className="box">
           <div
             className="d-flex align-items-center mt-2 fw-bolder"
-            style={{ color: "rgb(61, 87, 253)" }}
+            style={{ color: "rgb(61, 87, 253)", width: "100%" }}
           >
             <marquee
               scrollamount="10"
